@@ -9,7 +9,7 @@ jobs:
       - name: Get the code
         uses: actions/checkout@v5
 
-      -  name: Block disallowed <script> usage
+      - name: Block disallowed <script> usage
         run: |
           echo "Checking these HTML files:"
           find . -name "*.html" -not -path "./.git/*" -print
